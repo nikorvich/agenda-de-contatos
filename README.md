@@ -1,22 +1,24 @@
 # 📇 Agenda de Contatos (MVC)
 
-Aplicação de Agenda Telefônica desenvolvida em JavaScript (ES6+), aplicando o padrão de responsabilidade única e persistência de dados local.
+Aplicação de agenda de contatos desenvolvida em JavaScript (ES6+), utilizando a arquitetura MVC (Model-View-Controller), com separação de responsabilidades e persistência local de dados.
 
 ## Funcionalidades
 
-- **Cadastro**: Captura de dados do formulário e salvamento via service.
-    
-- **Listagem**: Renderização dinâmica dos registros salvos ao carregar a página.
-    
-- **Exclusão**: Remoção de registros específicos através de um ID único.
-    
-- **Persistência**: Armazenamento automático via `localStorage`.
-    
+- **Cadastro:** Adição de novos contatos por meio de formulário.
+- **Listagem:** Exibição dinâmica dos contatos cadastrados ao carregar a aplicação.
+- **Exclusão:** Remoção de contatos por meio de identificador único.
+- **Persistência:** Armazenamento automático dos dados utilizando `localStorage`.
 
 ## Especificações Técnicas
 
-- **Módulos**: Uso de ES6 Modules (`import`/`export`).
-    
-- **Arquitetura**: MVC (Model-View-Controller) com separação de responsabilidades.
-    
-- **Entry Point**: Inicialização via `main.mjs`.
+- **Linguagem:** JavaScript (ES6+).
+- **Módulos:** Utilização de ES6 Modules (`import`/`export`).
+- **Arquitetura:** MVC (Model-View-Controller).
+- **Persistência:** `localStorage`.
+- **Ponto de Entrada:** Inicialização da aplicação por meio do arquivo `main.mjs`.
+
+## Estrutura da Aplicação
+
+- **Model:** Responsável pela representação e manipulação dos dados.
+- **View:** Responsável pela interface e renderização das informações.
+- **Controller:** Responsável pela comunicação entre Model e View e pelo controle das ações do usuário.
