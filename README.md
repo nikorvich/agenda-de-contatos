@@ -1,4 +1,4 @@
-# 📇 Agenda de Contatos (MVC)
+# Contact Manager (MVC)
 
 Aplicação de agenda de contatos desenvolvida em JavaScript (ES6+), utilizando a arquitetura MVC (Model-View-Controller), com separação de responsabilidades e persistência local de dados.
 
