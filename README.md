@@ -1,24 +1,30 @@
 # Agenda de Contatos (MVC)
 
-Aplicação de agenda de contatos desenvolvida em JavaScript (ES6+), utilizando a arquitetura MVC (Model-View-Controller), com separação de responsabilidades e persistência local de dados.
+Aplicação de gestão de contatos construída com arquitetura MVC, focada em separação de responsabilidades e persistência local.
+
+![Demonstração da Agenda](demonstracao-agenda.png)
+
+## Interface
+A interface permite o gerenciamento direto de registros:
+* **Formulário de Entrada:** Campos para Nome, Telefone e E-mail com botão de ação rápida para adicionar.
+* **Tabela Dinâmica:** Listagem organizada com colunas para dados e ação de exclusão individual.
 
 ## Funcionalidades
-
-- **Cadastro:** Adição de novos contatos por meio de formulário.
-- **Listagem:** Exibição dinâmica dos contatos cadastrados ao carregar a aplicação.
-- **Exclusão:** Remoção de contatos por meio de identificador único.
-- **Persistência:** Armazenamento automático dos dados utilizando `localStorage`.
+* **Adicionar:** Inclusão de contatos através do formulário.
+* **Listar:** Renderização automática da base de dados local.
+* **Remover:** Exclusão individual de registros.
+* **Persistência:** Sincronização automática com `localStorage`.
 
 ## Especificações Técnicas
+* **Linguagem:** JavaScript (ES6+).
+* **Arquitetura:** MVC (Model-View-Controller).
+* **Módulos:** Suporte a ES6 Modules (`import`/`export`).
+* **Armazenamento:** `localStorage`.
+* **Entry Point:** `main.mjs`.
 
-- **Linguagem:** JavaScript (ES6+).
-- **Módulos:** Utilização de ES6 Modules (`import`/`export`).
-- **Arquitetura:** MVC (Model-View-Controller).
-- **Persistência:** `localStorage`.
-- **Ponto de Entrada:** Inicialização da aplicação por meio do arquivo `main.mjs`.
-
-## Estrutura da Aplicação
-
-- **Model:** Responsável pela representação e manipulação dos dados.
-- **View:** Responsável pela interface e renderização das informações.
-- **Controller:** Responsável pela comunicação entre Model e View e pelo controle das ações do usuário.
+## Estrutura do Projeto
+| Camada | Responsabilidade |
+| :--- | :--- |
+| **Model** | Lógica de dados, validação e persistência. |
+| **View** | Manipulação do DOM e renderização da tabela/formulário. |
+| **Controller** | Intermediação entre eventos do usuário, View e Model. |
